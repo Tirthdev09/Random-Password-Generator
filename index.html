@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <h3 class="head">Password Generator</h3>
+        <form id="form">
+            <p>PLease Select Password Type :</p>
+            <input type="radio" id="numeric" value="num" name="passType">
+            <label for="numeric">Numeric</label><br>
+            <input type="radio" id="alphabetical" value="alp" name="passType">
+            <label for="alphabetical">Alphabetical</label><br>
+            <input type="radio" id="alphanumeric" value="alpnum" name="passType">
+            <label for="alphanumeric">Alphanumeric</label><br>
+            <label for="length">Length</label>
+            <input type="range" id="length" min="1" max="25" step="1" />
+            <span id="showLength"></span><br>
+            <button id="generate">Generate</button>
+        </form>
+        <span id="genPass"></span>
+    </div>
+    <footer style="margin: 5%;">© Tirth Dev (2025)</footer>
+    <script src="index.js"></script>
+</body>
+</html>
