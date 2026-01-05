@@ -40,7 +40,7 @@ generate.addEventListener("click", function() {
         genPass.textContent = "🎉 " + randPass(passLength) + " 🎉";
    }
 
-   if (passType == "alp") {
+    else if (passType == "alp") {
         function randPass(length) {
             const char = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
             let result = '';
@@ -54,7 +54,7 @@ generate.addEventListener("click", function() {
         genPass.textContent = "🎉 " + randPass(passLength) + " 🎉";
    }
 
-   if (passType == "alpnum") {
+   else if (passType == "alpnum") {
         function randPass(length) {
             const char = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
             let result = '';
