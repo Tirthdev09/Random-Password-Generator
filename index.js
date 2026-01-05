@@ -66,6 +66,9 @@ generate.addEventListener("click", function() {
         }
         
         genPass.textContent = "🎉 " + randPass(passLength) + " 🎉";
+   } else {
+    genPass.textContent = "Please Select Password Type 👎";
    }
+
 
 });
