@@ -6,7 +6,7 @@ const genPass = document.getElementById("genPass");
 
 showLength.textContent = lengthInput.value;
 
-lengthInput.addEventListener("change", function() {
+lengthInput.addEventListener("input", function() {
     showLength.textContent = this.value;
 });
 
